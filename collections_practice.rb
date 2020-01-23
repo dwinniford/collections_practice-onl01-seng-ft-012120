@@ -23,8 +23,8 @@ def kesha_maker(array)
   array.each do |word|
     word_array = word.chars
     word_array.delete_at(2)
-    word_array.insert
-    new_array << word.chars.replace("$").join
+    word_array.insert(2, "$")
+    new_array << word_array.join
   end 
   new_array
 end 
